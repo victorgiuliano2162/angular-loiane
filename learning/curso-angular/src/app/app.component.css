@@ -1,0 +1,7 @@
+.app-button {
+  display: flex;
+  gap: 8px;
+}
+button:hover {
+  background-color: #fff;
+}

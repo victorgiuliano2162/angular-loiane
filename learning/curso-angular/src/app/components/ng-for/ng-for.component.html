@@ -1,0 +1,20 @@
+<div>
+  <h3>Diretiva *ngFor melhorada</h3>
+  <h2>Diretiva *ngFor Angular 2</h2>
+  <ul>
+    <p>Lista 1</p>
+    <li *ngFor="let curso of listaCursos, let i = index">
+      {{curso}} ({{i + 1}}/ {{listaCursos.length}})
+    </li>
+  </ul>
+
+  <ul>
+    <p>Lista 2</p>
+    <p>Não consegui fazer funcionar</p>
+    <!--
+      {{ curso }} ({{i + 1}}/{{ cursosObervable.length }})
+    </li>
+    <li *ngFor="let curso of cursosObervable | async as cursos, index as i">
+    -->
+  </ul>
+</div>

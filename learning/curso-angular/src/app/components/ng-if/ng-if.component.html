@@ -1,0 +1,14 @@
+<div>
+  <h3>*ngIf melhorado</h3>
+  <button (click)="onMostrarCursos()">Alterar o NgIf</button>
+
+  <h5>*ngIf Angular 2.x exemplo:</h5>
+
+  <div *ngIf="mostrarCursos">Lista de cursos</div>
+  <div *ngIf="!mostrarCursos">Lista vazia</div>
+
+  <h5>*ngIf Angular 4.x</h5>
+  <div *ngIf="mostrarCursos; else cursosVazio">Lista de cursos</div>
+
+  <ng-template #cursosVazio>Lista vazia</ng-template>
+</div>

@@ -1,0 +1,31 @@
+<h5>Form</h5>
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+
+
+    <input
+    type="email"
+    name="email"
+    [(ngModel)]="usuario.email1"
+    required
+    pattern="[a-z0-9!#$%&'*+/?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+    placeholder="email@angular2.com"
+    />
+
+    <input
+    type="email"
+    name="email2"
+    [(ngModel)]="usuario.email2"
+    required
+    email
+    placeholder="email@angular2.com"
+    />
+    <br>
+
+
+  <button type="submit" [disabled]="!f.valid">Enviar</button>
+  <p *ngIf="usuario.email1 !== usuario.email2" style="color: red; padding: 10px 0px 0px 0px;">
+    Os emails informados devem ser iguais
+</p>
+</form>
