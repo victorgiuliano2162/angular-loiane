@@ -1,1 +1,11 @@
-<p>form works!</p>
+<p>
+  Lista de cursos do portal {{nomePortal}}
+</p>
+
+
+<h3>Ng for com templates</h3>
+<ul>
+  <li *ngFor="let curso of cursos">
+    {{curso}}
+  </li>
+</ul>

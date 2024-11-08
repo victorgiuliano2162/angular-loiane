@@ -6,6 +6,8 @@ import { AppHighlightComponent } from './components/app-highlight/app-highlight.
 import { FormsValidatorComponent } from './components/forms-validator/forms-validator.component';
 import { AppComponent } from './app.component';
 import { FormComponent } from './components/form/form.component';
+import { DatabindComponent } from './components/databind/databind.component';
+import { ClassStyleBindingComponent } from './components/class-style-binding/class-style-binding.component';
 
 const routes: Routes = [
   {
@@ -32,7 +34,14 @@ const routes: Routes = [
     path: 'form',
     component: FormComponent
   },
-
+  {
+    path: 'databind',
+    component: DatabindComponent
+  },
+  {
+    path: 'classStyleBinding',
+    component: ClassStyleBindingComponent
+  }
 
 ];
 

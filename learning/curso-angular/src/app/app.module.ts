@@ -10,6 +10,9 @@ import { AppHighlightComponent } from './components/app-highlight/app-highlight.
 import { FormsValidatorComponent } from './components/forms-validator/forms-validator.component';
 import { FormComponent } from './components/form/form.component';
 import { MaterialModule } from './material/material.module';
+import { CursosService } from './services/cursos.service';
+import { DatabindComponent } from './components/databind/databind.component';
+import { ClassStyleBindingComponent } from './components/class-style-binding/class-style-binding.component';
 
 @NgModule({
   declarations: [
@@ -19,9 +22,11 @@ import { MaterialModule } from './material/material.module';
     AppHighlightComponent,
     FormsValidatorComponent,
     FormComponent,
+    DatabindComponent,
+    ClassStyleBindingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, MaterialModule],
-  providers: [],
+  providers: [ CursosService ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
