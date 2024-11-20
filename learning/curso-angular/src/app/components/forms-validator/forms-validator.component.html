@@ -24,8 +24,8 @@
     <br>
 
 
-  <button type="submit" [disabled]="!f.valid">Enviar</button>
-  <p *ngIf="usuario.email1 !== usuario.email2" style="color: red; padding: 10px 0px 0px 0px;">
+  <button type="submit" [disabled]="!f.valid" >Enviar</button>
+  <p *ngIf="doubleCampsValidation(usuario.email1, usuario.email2)" style="color: red; padding: 10px 0px 0px 0px;">
     Os emails informados devem ser iguais
 </p>
 </form>
