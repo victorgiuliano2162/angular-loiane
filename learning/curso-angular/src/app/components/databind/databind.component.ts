@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatabindComponent implements OnInit{
 
-  nomeDoCurso: string = "Angular";
-  
   url: string = "http://vito.com";
 
   cursoAngular: boolean = true;
