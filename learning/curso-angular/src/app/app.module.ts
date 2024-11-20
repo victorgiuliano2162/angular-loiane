@@ -13,6 +13,7 @@ import { MaterialModule } from './material/material.module';
 import { CursosService } from './services/cursos.service';
 import { DatabindComponent } from './components/databind/databind.component';
 import { ClassStyleBindingComponent } from './components/class-style-binding/class-style-binding.component';
+import { EventBindingComponent } from './components/event-binding/event-binding.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ClassStyleBindingComponent } from './components/class-style-binding/cla
     FormComponent,
     DatabindComponent,
     ClassStyleBindingComponent,
+    EventBindingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, MaterialModule],
   providers: [ CursosService ],

@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './components/form/form.component';
 import { DatabindComponent } from './components/databind/databind.component';
 import { ClassStyleBindingComponent } from './components/class-style-binding/class-style-binding.component';
+import { EventBindingComponent } from './components/event-binding/event-binding.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'classStyleBinding',
     component: ClassStyleBindingComponent
+  },
+  {
+    path: 'eventbinding',
+    component: EventBindingComponent
   }
 
 ];
