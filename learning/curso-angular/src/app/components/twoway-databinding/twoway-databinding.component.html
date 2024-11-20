@@ -1,1 +1,40 @@
-<p>twoway-databinding works!</p>
+<section class="two-way-databinding">
+  <article>
+    <h3>Two-way data binding</h3>
+
+    <div>
+      <input type="text"
+      #inputValue
+      [value]="nome"
+      (input)="nome = inputValue.value"
+      >
+
+      <p>Você digitou {{ nome }}</p>
+
+      <p>You can do too</p>
+      <input type="text"
+      [ngModel] = "nome"
+      (ngModelChange)="nome = $event"
+      >
+
+      <p><br>Or, in a more sofisticated way</p>
+      <input type="text"
+      [(ngModel)]="nome"
+      >
+
+      <div>
+        <p>Agora com objetos</p>
+        <p>Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos</p>
+        <input type="text"
+        [(ngModel)] = "pessoa.nome"
+        >
+
+        <input type="number"
+        [(ngModel)] = "pessoa.idade"
+        >
+      </div>
+
+      <app-forms-validator></app-forms-validator>
+    </div>
+  </article>
+</section>

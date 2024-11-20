@@ -18,6 +18,14 @@ export class TwowayDatabindingComponent {
 
     Component <--> Template
     [(ngModel)] = "property"
+    [()] = banana in the box
+
   */
 
+    nome: string = 'abc';
+
+    pessoa: any = {
+      nome: 'def',
+      idade: 20
+    }
 }
