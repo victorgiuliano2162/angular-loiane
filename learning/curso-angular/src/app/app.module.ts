@@ -14,6 +14,7 @@ import { CursosService } from './services/cursos.service';
 import { DatabindComponent } from './components/databind/databind.component';
 import { ClassStyleBindingComponent } from './components/class-style-binding/class-style-binding.component';
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
+import { TwowayDatabindingComponent } from './components/twoway-databinding/twoway-databinding.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { EventBindingComponent } from './components/event-binding/event-binding.
     DatabindComponent,
     ClassStyleBindingComponent,
     EventBindingComponent,
+    TwowayDatabindingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, MaterialModule],
   providers: [ CursosService ],

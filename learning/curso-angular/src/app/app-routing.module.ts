@@ -9,6 +9,7 @@ import { FormComponent } from './components/form/form.component';
 import { DatabindComponent } from './components/databind/databind.component';
 import { ClassStyleBindingComponent } from './components/class-style-binding/class-style-binding.component';
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
+import { TwowayDatabindingComponent } from './components/twoway-databinding/twoway-databinding.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: 'eventbinding',
     component: EventBindingComponent
+  },
+  {
+    path: 'twoway-databinding',
+    component: TwowayDatabindingComponent
   }
 
 ];
