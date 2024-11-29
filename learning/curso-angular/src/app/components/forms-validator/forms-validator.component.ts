@@ -17,7 +17,7 @@ export class FormsValidatorComponent {
   }
 
   doubleCampsValidation(input1: string, input2: string): boolean {
-    if (input2.trim().length === 0) return false
+    if (input2.trim().length === 0 || input1.trim().length === 0) return false
     else if (input2 !== input1) return true
     //when input2 is blank, do nothing
     //when input2 is not blank and diffrent from input2 return error message
