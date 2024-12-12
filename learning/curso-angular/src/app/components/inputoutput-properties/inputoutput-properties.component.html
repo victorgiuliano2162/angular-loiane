@@ -2,7 +2,13 @@
   <article>
     <h3>Input/Output Properties</h3>
 
-      <app-input-property [nomeCurso]="nomeDoCurso"></app-input-property>
+      <app-input-property [nome]="nomeDoCurso"></app-input-property>
+
+      <contador
+      [valor]="valorInicial"
+      (mudouValor)="onMudouValor($event.novoValor)"
+      ></contador>
+
 
   </article>
 </section>
