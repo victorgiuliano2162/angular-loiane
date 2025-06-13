@@ -10,6 +10,7 @@ import { AppHighlightComponent } from './components/app-highlight/app-highlight.
 import { FormsValidatorComponent } from './components/forms-validator/forms-validator.component';
 import { FormComponent } from './components/form/form.component';
 import { MaterialModule } from './material/material.module';
+
 import { CursosService } from './services/cursos.service';
 import { DatabindComponent } from './components/databind/databind.component';
 import { ClassStyleBindingComponent } from './components/class-style-binding/class-style-binding.component';
@@ -18,6 +19,13 @@ import { TwowayDatabindingComponent } from './components/twoway-databinding/twow
 import { InputoutputPropertiesComponent } from './components/inputoutput-properties/inputoutput-properties.component';
 import { InputPropertyComponent } from './components/inputoutput/input-property/input-property.component';
 import { OutputPropertyComponent } from './components/inputoutput/output-property/output-property.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import {MatIconModule} from '@angular/material/icon';
+import { MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 @NgModule({
   declarations: [
@@ -34,8 +42,10 @@ import { OutputPropertyComponent } from './components/inputoutput/output-propert
     InputoutputPropertiesComponent,
     InputPropertyComponent,
     OutputPropertyComponent,
+    SidenavComponent,
+
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, MaterialModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, MaterialModule, MatIconModule, MatSidenavModule, MatListModule, MatIconModule, BrowserAnimationsModule ],
   providers: [ CursosService ],
   bootstrap: [AppComponent],
 })

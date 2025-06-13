@@ -1,0 +1,47 @@
+<button (click)="show()"> <mat-icon>menu</mat-icon> </button>
+<mat-drawer-container autosize>
+    <mat-drawer #drawer opened="true" mode="side" position="start">
+    <mat-nav-list>
+        <mat-list-item>
+            <button routerLink="ngfor" mat-button>ngFor</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="ngif" mat-button>ngIf</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="" mat-button>NgSwitch</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="highligh" mat-button>highligh</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="formvalidator" mat-button>formvalidator</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="form" mat-button>form</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="databind" mat-button>databind</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="classStyleBinding" mat-button>classStyleBinding</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="eventbinding" mat-button>eventbinding</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="twoway-databinding" mat-button>twoway-databinding</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="inputoutput" mat-button>inputoutput</button>
+        </mat-list-item>
+    </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+        <div style="text-align: center;min-height: 600px;">
+
+            <router-outlet></router-outlet>
+            </div>
+    </mat-drawer-content>
+</mat-drawer-container>
+

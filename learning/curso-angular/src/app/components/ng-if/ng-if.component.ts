@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgIFComponent implements OnInit{
 
-  mostrarCursos: boolean = false;
+  mostrarCursos: boolean = true;
 
   onMostrarCursos() {
     this.mostrarCursos = !this.mostrarCursos;
