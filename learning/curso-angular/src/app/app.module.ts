@@ -20,11 +20,11 @@ import { InputoutputPropertiesComponent } from './components/inputoutput-propert
 import { InputPropertyComponent } from './components/inputoutput/input-property/input-property.component';
 import { OutputPropertyComponent } from './components/inputoutput/output-property/output-property.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
-import {MatIconModule} from '@angular/material/icon';
-import { MatSidenavModule} from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -45,8 +45,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SidenavComponent,
 
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, MaterialModule, MatIconModule, MatSidenavModule, MatListModule, MatIconModule, BrowserAnimationsModule ],
-  providers: [ CursosService ],
+  imports: [
+    BrowserModule, 
+    AppRoutingModule, 
+    FormsModule, 
+    MaterialModule, 
+    MatIconModule, 
+    MatSidenavModule, MatListModule, 
+    MatIconModule, 
+    BrowserAnimationsModule, 
+    MatButtonModule
+  ],
+
+  providers: [CursosService],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
